@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Courses Object</title>
+</head>
+<body>
+
+  <h2>Course List</h2>
+  <button onclick="courseData.printCourses()">Show Courses</button>
+
+  <script>
+    const courseData = {
+      courses: ["Web Development", "JavaScript", "IoT", "Database Systems"],
+
+      printCourses: function () {
+        this.courses.forEach(function (course) {
+          console.log(course);
+          document.write(course + "<br>");
+        });
+      }
+    };
+  </script>
+
+</body>
+</html>
